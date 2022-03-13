@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# to-do-task-manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Many people forget what they are supposed to do for the day and then spend their time
+finding out what they were supposed to do and then missing out on an important
+meeting. 
 
-## Available Scripts
+## UI
 
-In the project directory, you can run:
+<b>Adding and Completing Tasks</b>
 
-### `npm start`
+![project-image](https://user-images.githubusercontent.com/82255305/158066222-94cfe10d-3d86-4d0d-a120-e191c802aa05.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<b>Editing Tasks</b>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![edit-task](https://user-images.githubusercontent.com/82255305/158066218-d51152ec-0b69-45b0-8d2f-069b0a69b2ff.jpg)
 
-### `npm test`
+## Some Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Easy UI** </br>
+The UI of the website is user-friendly and the UX is also good.
 
-### `npm run build`
+* **Mobile Responsive Web-App** </br>
+The Web-App is fully Responsive and can be viewed on any device.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Search Tasks** </br>
+You can search a task using the search function which is provided in the web-app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **Hide and Archive Data**</br>
+You can hide and archive any task as per your comfort and you can even undo it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **CRUD functionality**</br>
+User can add, delete, create and view tasks.
 
-### `npm run eject`
+* **Undo Deleted Tasks**</br>
+User can undo the deleted tasks and the respective tasks will be visible to the user just like it did earlier.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Download CSV File**</br>
+User can download the csv file of the tasks in the to-do list.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p>Make sure you have <a href="https://nodejs.org">Node.js</a> installed</p>
+<h3>Installing and Starting the Web-App<h3>
+   
+1. Clone the repo
+   ```sh
+   git clone https://github.com/nirav777/to-do-task-manager.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Install NPM packages (dependencies)
+   ```sh
+   npm install
+   ```
+  
+3. Run app on local server
+   ```sh
+   npm start
+   ```
+  
