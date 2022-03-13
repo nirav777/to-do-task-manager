@@ -1,0 +1,432 @@
+body {
+  background: #eabb4b;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#eabb4b),
+    to(#e28652)
+  );
+  background: linear-gradient(to bottom, #eabb4b, #e28652);
+  text-align: center;
+  overflow: scroll;
+}
+
+.to-do-app h1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: "Fredoka", sans-serif;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f3884a;
+  border: none;
+  border-radius: 15px;
+}
+
+.form input {
+  height: 40px;
+  margin: 5px;
+  font-family: "Fredoka", sans-serif;
+  border: none;
+  font-size: 20px;
+  border-radius: 7px;
+  background-color: #e4ce96;
+  outline: none;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align-last: center;
+}
+
+.form input:hover {
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.form button {
+  letter-spacing: 2px;
+  width: 90px;
+  height: 45px;
+  margin: 5px;
+  background-color: #e4ce96;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  outline: none;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background-color: #22c538;
+}
+
+.form .add-button:hover,
+.form .search-button:hover {
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.form select {
+  margin: 5px;
+  height: 45px;
+  font-family: "Fredoka", sans-serif;
+  border: none;
+  font-size: 17px;
+  border-radius: 7px;
+  background-color: #e4ce96;
+  padding: 5px;
+  text-align-last: center;
+  outline: none;
+}
+
+.form select:hover {
+  cursor: pointer;
+}
+
+.to-do-container {
+  -webkit-text-stroke: thin;
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  padding: 15px;
+  background-color: #c4eefc;
+  border: none;
+  border-radius: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.todo:hover {
+  background-color: #88d5f1;
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.todo .todo-item {
+  list-style: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-family: "Fredoka", sans-serif;
+  font-size: 25px;
+}
+
+.todo .completed {
+  opacity: 0.2;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  text-decoration: line-through;
+}
+
+.todo button {
+  width: 90px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+}
+
+.todo button:hover {
+  cursor: pointer;
+}
+
+.todo .check-button {
+  background-color: aquamarine;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.todo .check-button:hover {
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #002e1f;
+}
+
+.todo .delete-button {
+  background-color: lightpink;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.todo .delete-button:hover {
+  -webkit-animation: none;
+  animation: none;
+  background-color: #50000c;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.todo .hide-button {
+  background-color: lightgoldenrodyellow;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.todo .hide-button:hover {
+  -webkit-animation: none;
+  animation: none;
+  background-color: #e7e704;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.todo .archive-button {
+  background-color: #ffb79a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.todo .archive-button:hover {
+  background-color: #ff6325;
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.todo .edit-button {
+  background-color: lightblue;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.todo .edit-button:hover {
+  background-color: #009dd1;
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.todo .edit-task-editor {
+  background-color: #e28652;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.todo .edit-task-editor h1 {
+  font-family: "Fredoka", sans-serif;
+}
+
+.todo .edit-task-editor input {
+  height: 40px;
+  margin: 5px;
+  font-family: "Fredoka", sans-serif;
+  border: none;
+  font-size: 20px;
+  border-radius: 7px;
+  background-color: #e4ce96;
+  outline: none;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align-last: center;
+}
+
+.todo .edit-task-editor input:hover {
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.todo .edit-task-editor button {
+  width: 90px;
+  height: 45px;
+  margin: 5px;
+  background-color: #e4ce96;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.todo .edit-task-editor button:hover {
+  background-color: #96782c;
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.delete-all-tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.delete-all-tasks button {
+  background-color: lightpink;
+  height: 45px;
+  width: 10%;
+  font-family: "Fredoka", sans-serif;
+  font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: 50% 60%;
+  transform-origin: 50% 60%;
+  border-radius: 5px;
+  margin: 5px;
+  border: none;
+  color: #e20a2b;
+  cursor: pointer;
+}
+
+.delete-all-tasks button:hover {
+  background-color: #e20a2b;
+  color: lightpink;
+  -webkit-animation: bounce-up 0.3s alternate ease infinite;
+  animation: bounce-up 0.3s alternate ease infinite;
+}
+
+.delete-all-tasks .reset-button,
+.delete-all-tasks .download-button {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+@-webkit-keyframes bounce-up {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+}
+
+@keyframes bounce-up {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .form {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .todo {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .delete-all-tasks button {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .form {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .todo {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .delete-all-tasks button {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .todo {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .todo button {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .delete-all-tasks button {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .todo button {
+    width: 45px;
+  }
+  .edit-task-editor input {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .delete-all-tasks button {
+    width: 65%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
